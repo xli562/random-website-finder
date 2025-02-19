@@ -1,1 +1,2 @@
-pyside2-venv
+pyside2-venv/*
+resources/*
