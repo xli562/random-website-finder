@@ -27,7 +27,10 @@ boring_titles = ['Node.js packaged by Bitnami',
                  'CMS Web Viewer',
                  '',
                  "Web Server's Default Page",
-                 r'æ²¡æ\x9c\x89æ\x89¾å\x88°ç«\x99ç\x82¹']
+                 r'æ²¡æ\x9c\x89æ\x89¾å\x88°ç«\x99ç\x82¹',
+                 'IIS7',
+                 'RouterOS',
+                 'Apache2 Debian Default Page: It works']
 
 def generate_random_ip():
     """
@@ -71,7 +74,7 @@ def check_website():
             match = re.search(r'<title>(.*?)</title>', response.text, re.IGNORECASE | re.DOTALL)
             title = match.group(1).strip() if match else "No Title Found"
             if title not in boring_titles:
-                print(f'\n> Found: {(ip, title)}')
+                print(f'\n> Found: http://{ip}, {title}')
                 return (ip, title)
     except Exception:
         return None
