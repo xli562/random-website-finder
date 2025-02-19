@@ -12,7 +12,7 @@ class OffscreenScreenshot(QWebEngineView):
     def __init__(self, url, ip, title, done_callback, parent=None):
         super(OffscreenScreenshot, self).__init__(parent)
         self.ip = ip
-        forbiddenChars = ['\\','/',':','*','?','"','<','>','|']  # 9 forbidden chars in WinOS file system
+        forbiddenChars = ['\\','/',':','*','?','"','<','>','|']  # 9 forbidden chars in the Windows file system
         replacmntChars = ['＼','／','：','＊','？','＂','＜','＞','｜']
         for i in range(8):
             title = title.replace(forbiddenChars[i],replacmntChars[i])

@@ -1,0 +1,10 @@
+OS Name: Microsoft Windows 11 家庭中文版
+Version: 10.0.22631 (22631)
+OS Manufacturer: Microsoft Corporation
+System Manufacturer: LENOVO
+System Type: x64-based PC
+Processor: 12th Gen Intel® Core™ i7-12700H @ 2.3GHz, 14 Cores, 20 Logical Processors
+Secure Boot State: Enabled
+Windows Directory: C:\WINDOWS
+System Directory: C:\WINDOWS\system32
+Installed RAM: 16.0 GB
